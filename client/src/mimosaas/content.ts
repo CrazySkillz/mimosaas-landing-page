@@ -12,9 +12,9 @@ export const MIMOSAAS_COLORS = {
 } as const;
 
 export const MIMOSAAS_NAV = [
-  { href: "#features", label: "Features" },
-  { href: "#how-it-works", label: "How it works" },
-  { href: "#integrations", label: "Integrations" },
+  { href: "/#features", label: "Features" },
+  { href: "/#how-it-works", label: "How it works" },
+  { href: "/#integrations", label: "Integrations" },
 ] as const;
 
 export const VALUE_PROPS = [

@@ -49,12 +49,12 @@ export default function MimoSaaSLayout({ children }: { children: React.ReactNode
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <a href="#how-it-works">
+            <a href="/#how-it-works">
               <Button variant="ghost" size="sm" className="no-underline" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
                 How it works
               </Button>
             </a>
-            <a href="#features">
+            <a href="/#features">
               <Button
                 size="sm"
                 className="no-underline text-white border-0"
@@ -93,7 +93,7 @@ export default function MimoSaaSLayout({ children }: { children: React.ReactNode
                   {item.label}
                 </a>
               ))}
-              <a href="#features" onClick={() => setMobileOpen(false)}>
+              <a href="/#features" onClick={() => setMobileOpen(false)}>
                 <Button className="w-full mt-2 text-white" style={{ background: MIMOSAAS_COLORS.accent }}>
                   Book a demo
                 </Button>
@@ -119,19 +119,22 @@ export default function MimoSaaSLayout({ children }: { children: React.ReactNode
               <p className="mt-3 text-sm leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
                 Connect your channels, onboard client workspaces, and see blended performance in minutes.
               </p>
-              <a href="#features" className="inline-block mt-4 no-underline">
+              <a href="/#features" className="inline-block mt-4 no-underline">
                 <Button size="sm" className="text-white" style={{ background: MIMOSAAS_COLORS.accent }}>
                   Get early access
                 </Button>
               </a>
             </div>
           </div>
-          <p
-            className="mt-10 border-t pt-6 text-center text-xs"
+          <div
+            className="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 text-xs sm:flex-row"
             style={{ borderColor: MIMOSAAS_COLORS.borderSoft, color: MIMOSAAS_COLORS.textSubtle }}
           >
-            © {new Date().getFullYear()} MimoSaaS. Marketing analytics overview for agencies.
-          </p>
+            <p>© {new Date().getFullYear()} MimoSaaS. Marketing analytics overview for agencies.</p>
+            <Link href="/privacy" className="font-medium no-underline hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
