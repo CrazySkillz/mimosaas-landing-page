@@ -36,8 +36,8 @@ export default function MimoSaaSHome() {
                 Marketing analytics your clients will trust
               </h1>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-                mimosaas unifies ad spend, revenue, and funnel data across every client and channel — so your team
-                spends less time reporting and more time improving performance.
+                mimosaas unifies ad spend, revenue, and funnel data across your GA4 clients so your team spends less
+                time reporting and more time improving performance.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <a href="https://marketforensics.onrender.com/sign-in">
@@ -107,7 +107,7 @@ export default function MimoSaaSHome() {
         style={{ borderColor: MIMOSAAS_COLORS.borderSoft, background: MIMOSAAS_COLORS.bgCard }}
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-bold">Works with your existing stack</h2>
+          <h2 className="text-3xl font-bold">Works with your existing stack and future integrations</h2>
           <p className="mt-4 max-w-xl mx-auto" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
             Connect the platforms you already use — ad managers, analytics, CRM, and exports.
           </p>
@@ -128,9 +128,6 @@ export default function MimoSaaSHome() {
       <section className="py-20" style={{ background: MIMOSAAS_COLORS.textMain, color: "#fff8f3" }}>
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Ready to win more retainers with better reporting?</h2>
-          <p className="mt-4 text-orange-100/90 leading-relaxed">
-            Join agencies using mimosaas to deliver clearer insights, faster — across every client and channel.
-          </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a href="https://marketforensics.onrender.com/sign-in" className="no-underline">
               <Button

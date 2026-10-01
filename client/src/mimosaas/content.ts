@@ -11,25 +11,21 @@ export const MIMOSAAS_COLORS = {
   borderSoft: "#fed7aa",
 } as const;
 
-export const MIMOSAAS_NAV = [
-  { href: "/#integrations", label: "Integrations" },
-] as const;
-
 export const WORKFLOW_STEPS = [
   {
     step: "1",
-    title: "Connect your stack",
-    description: "Link Meta, Google Ads, LinkedIn, GA4, and your CRM in a few clicks.",
+    title: "Create your client and campaign",
+    description: "Set up a client workspace, add a campaign, and define its reporting context.",
   },
   {
     step: "2",
-    title: "Set up client workspaces",
-    description: "Create a workspace per account, map campaigns, and invite your team.",
+    title: "Connect Google Analytics",
+    description: "Link the campaign's GA4 property and select the campaign values you want to track.",
   },
   {
     step: "3",
-    title: "Deliver insights that win retainers",
-    description: "Share live dashboards, scheduled reports, and proactive alerts with clients.",
+    title: "Analyze and act",
+    description: "Monitor performance, set KPIs and Benchmarks, review Insights, and generate reports.",
   },
 ] as const;
 
