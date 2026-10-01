@@ -5,8 +5,6 @@ import MimoSaaSProductVisual from "./product-visual";
 import {
   INTEGRATIONS,
   MIMOSAAS_COLORS,
-  TESTIMONIALS,
-  VALUE_PROPS,
   WORKFLOW_STEPS,
 } from "./content";
 
@@ -38,11 +36,11 @@ export default function MimoSaaSHome() {
                 Marketing analytics your clients will trust
               </h1>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-                MimoSaaS unifies ad spend, revenue, and funnel data across every client and channel — so your team
+                mimosaas unifies ad spend, revenue, and funnel data across every client and channel — so your team
                 spends less time reporting and more time improving performance.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <a href="#features">
+                <a href="https://marketforensics.onrender.com/sign-in">
                   <Button
                     size="lg"
                     className="gap-2 px-8 text-white no-underline border-0 w-full sm:w-auto"
@@ -50,16 +48,6 @@ export default function MimoSaaSHome() {
                   >
                     Get early access
                     <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </a>
-                <a href="#how-it-works">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="no-underline w-full sm:w-auto"
-                    style={{ borderColor: MIMOSAAS_COLORS.borderSoft, color: MIMOSAAS_COLORS.textMain }}
-                  >
-                    See how it works
                   </Button>
                 </a>
               </div>
@@ -88,33 +76,7 @@ export default function MimoSaaSHome() {
         </div>
       </section>
 
-      <section id="features" className="py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold">Everything you need to run a modern agency</h2>
-            <p className="mt-4 leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-              One platform for cross-channel reporting, client workspaces, and the alerts that keep accounts on track.
-            </p>
-          </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {VALUE_PROPS.map((f) => (
-              <article
-                key={f.title}
-                className="rounded-2xl border p-6 shadow-sm transition-shadow hover:shadow-md"
-                style={{ borderColor: MIMOSAAS_COLORS.borderSoft, background: MIMOSAAS_COLORS.bgCard }}
-              >
-                <h3 className="font-semibold">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-                  {f.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section
-        id="how-it-works"
         className="border-y py-20"
         style={{ borderColor: MIMOSAAS_COLORS.borderSoft, background: MIMOSAAS_COLORS.bgHero }}
       >
@@ -134,30 +96,6 @@ export default function MimoSaaSHome() {
                   {s.description}
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold">What agency teams say</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {TESTIMONIALS.map((t) => (
-              <blockquote
-                key={t.quote}
-                className="rounded-2xl border p-8 shadow-sm"
-                style={{ borderColor: MIMOSAAS_COLORS.borderSoft, background: MIMOSAAS_COLORS.bgCard }}
-              >
-                <p className="text-base leading-relaxed italic" style={{ color: MIMOSAAS_COLORS.textMain }}>
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <footer className="mt-5 text-sm" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-                  <span className="font-medium text-[#241306]">{t.role}</span>
-                  <span className="mx-1">·</span>
-                  {t.company}
-                </footer>
-              </blockquote>
             ))}
           </div>
         </div>
@@ -191,10 +129,10 @@ export default function MimoSaaSHome() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Ready to win more retainers with better reporting?</h2>
           <p className="mt-4 text-orange-100/90 leading-relaxed">
-            Join agencies using MimoSaaS to deliver clearer insights, faster — across every client and channel.
+            Join agencies using mimosaas to deliver clearer insights, faster — across every client and channel.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="#features" className="no-underline">
+            <a href="https://marketforensics.onrender.com/sign-in" className="no-underline">
               <Button
                 size="lg"
                 className="gap-2 px-8 text-white border-0"
@@ -202,15 +140,6 @@ export default function MimoSaaSHome() {
               >
                 Get early access
                 <ArrowRight className="h-4 w-4" />
-              </Button>
-            </a>
-            <a href="#how-it-works" className="no-underline">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-orange-300/50 text-orange-50 hover:bg-orange-950/30"
-              >
-                See how it works
               </Button>
             </a>
           </div>
