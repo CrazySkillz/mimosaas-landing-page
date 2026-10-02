@@ -36,7 +36,7 @@ export default function MimoSaaSHome() {
                 Marketing analytics your clients will trust
               </h1>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
-                mimosaas unifies ad spend, revenue, and funnel data across your GA4 clients so your team spends less
+                mimosaas unifies ad spend, revenue, and funnel data across your Google Analytics clients so your team spends less
                 time reporting and more time improving performance.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
