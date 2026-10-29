@@ -1,7 +1,7 @@
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import { MIMOSAAS_COLORS } from "./content";
 import logoSrc from "./assets/logo_fff8f3_bg_orange_fill.jpg";
+import { EarlyAccessButton } from "./early-access";
 
 function MimoSaaSLogo({ className = "h-9" }: { className?: string }) {
   return (
@@ -49,11 +49,9 @@ export default function MimoSaaSLayout({ children }: { children: React.ReactNode
               <p className="mt-3 text-sm leading-relaxed" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
                 Connect your channels, onboard client workspaces, and see blended performance in minutes.
               </p>
-              <a href="https://marketforensics.onrender.com/sign-in" className="inline-block mt-4 no-underline">
-                <Button size="sm" className="text-white" style={{ background: MIMOSAAS_COLORS.accent }}>
-                  Get early access
-                </Button>
-              </a>
+              <EarlyAccessButton size="sm" className="mt-4 text-white" style={{ background: MIMOSAAS_COLORS.accent }}>
+                Get early access
+              </EarlyAccessButton>
             </div>
           </div>
           <div

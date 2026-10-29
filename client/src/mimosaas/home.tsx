@@ -1,7 +1,7 @@
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import MimoSaaSLayout from "./layout";
 import MimoSaaSProductVisual from "./product-visual";
+import { EarlyAccessButton } from "./early-access";
 import {
   INTEGRATIONS,
   MIMOSAAS_COLORS,
@@ -40,16 +40,14 @@ export default function MimoSaaSHome() {
                 time reporting and more time improving performance.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <a href="https://marketforensics.onrender.com/sign-in">
-                  <Button
-                    size="lg"
-                    className="gap-2 px-8 text-white no-underline border-0 w-full sm:w-auto"
-                    style={{ background: MIMOSAAS_COLORS.accent }}
-                  >
-                    Get early access
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </a>
+                <EarlyAccessButton
+                  size="lg"
+                  className="gap-2 px-8 text-white no-underline border-0 w-full sm:w-auto"
+                  style={{ background: MIMOSAAS_COLORS.accent }}
+                >
+                  Get early access
+                  <ArrowRight className="h-4 w-4" />
+                </EarlyAccessButton>
               </div>
               <ul className="mt-8 space-y-2 text-sm" style={{ color: MIMOSAAS_COLORS.textSubtle }}>
                 {["No credit card required", "Set up in under an hour", "Cancel anytime"].map((item) => (
@@ -129,16 +127,14 @@ export default function MimoSaaSHome() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Ready to win more retainers with better reporting?</h2>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="https://marketforensics.onrender.com/sign-in" className="no-underline">
-              <Button
-                size="lg"
-                className="gap-2 px-8 text-white border-0"
-                style={{ background: MIMOSAAS_COLORS.accent }}
-              >
-                Get early access
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </a>
+            <EarlyAccessButton
+              size="lg"
+              className="gap-2 px-8 text-white border-0"
+              style={{ background: MIMOSAAS_COLORS.accent }}
+            >
+              Get early access
+              <ArrowRight className="h-4 w-4" />
+            </EarlyAccessButton>
           </div>
         </div>
       </section>

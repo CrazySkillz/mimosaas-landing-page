@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         <header className="border-b border-border pb-8">
           <p className="text-sm font-semibold" style={{ color: MIMOSAAS_COLORS.accent }}>MimoSaaS</p>
           <h1 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">Privacy Policy</h1>
-          <p className="mt-3 text-sm text-muted-foreground">Effective date: September 29, 2026</p>
+          <p className="mt-3 text-sm text-muted-foreground">Effective date: October 29, 2026</p>
         </header>
 
         <div className="mt-8 space-y-9">
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
               <li><strong className="text-foreground">Workspace information:</strong> client names, campaign details, budgets, targets, benchmarks, reports, alert settings, and information you upload or enter.</li>
               <li><strong className="text-foreground">Connected-service information:</strong> account and property identifiers, campaign data, analytics metrics, advertising metrics, ecommerce or CRM data, and spreadsheet data that you authorise us to access.</li>
               <li><strong className="text-foreground">Technical information:</strong> IP address, browser and device information, session data, security events, and application logs.</li>
-              <li><strong className="text-foreground">Communications:</strong> support requests, report recipients, alert recipients, and messages you submit through service features.</li>
+              <li><strong className="text-foreground">Communications:</strong> early-access requests, launch-notification addresses, support requests, report recipients, alert recipients, and messages you submit through service features.</li>
             </ul>
           </section>
 
@@ -80,6 +80,7 @@ export default function PrivacyPolicy() {
               <li>Authenticate users and enforce workspace and campaign access.</li>
               <li>Import, organise, analyse, and present connected campaign data.</li>
               <li>Generate dashboards, reports, and notifications.</li>
+              <li>Send launch notifications you request through the early-access form.</li>
               <li>Send service messages, scheduled reports, and alerts configured by users.</li>
               <li>Prevent misuse, comply with legal obligations, and protect our users and service.</li>
             </ul>
